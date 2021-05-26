@@ -5,71 +5,95 @@
     <title>HTML Academy: Девайс</title>
   </head>
 
-
   <body>
-
-    <!--ХЕДЕР--------------------------------------------------------------------------------------------------------->
     <header>
-
-      <nav>
-
-        <a><img src="img/logo1.svg" width="163" height="35" alt=""></a>
-        <a href="#">Поиск по сайту</a> 
-        <a>
-          <img src="img/icon_search.svg" width="16" height="16" alt="">           
-        </a>
-
-        <a href="#">Валентин Петухов</a> 
-        <a>
-          <img src="img/icon_user.svg" width="16" height="16" stroke="black" fill=#000000 alt="">           
-        </a>
-
+      
+      <a href="https://htmlacademy.ru/intensive/htmlcss">Device
+        <!--Картинка Логотип Device-->
+      </a>
+      <p>
+        <a href="#">Поиск по сайту</a>
+      </p>
+      <!--Картинка Лупа-->
+      <p>
+        <a href="#">Войти</a> 
+        <!--Картинка Пользователь-->
+      </p>
+      <p>
         <a href="#">Сравнить</a>
-        <a>
-          <img src="img/icon_chart.svg" width="16" height="16" alt="">           
-        </a>
-
+        <!--Картинка Сравнить-->
+      </p>
+      <p>
         <a href="#">Корзина</a>
-        <a>
-          <img src="img/basket.svg" width="16" height="16" alt="">           
-        </a>
+        <!--Картинка Корзина-->
+      </p>
 
-
-
-        <a href="catalog.html">Каталог товаров</a>
-        <a> <img src="img/icon_plus.svg" width="22" height="22" alt=""> </a>
-        <a href="#">Доставка</a>    
-        <a href="#">Гарантии</a>            
-        <a href="#">Контакты</a>
-
-        <svg width="260" height="8">
-          <rect width="100" height="7" style="fill:rgb(255, 255, 255);stroke-width:1;stroke:rgb(255, 255, 255)" />
-        </svg>
-
-      </nav>
+      <ul>
+        <li>
+          <a href="catalog.html">Каталог товаров</a>
+          <button type="submit">+</button>
+          <!--Картинка Плюс-->
+        </li>
+        <li>
+          <a href="#">Доставка</a> 
+        </li>
+        <li>
+          <a href="#">Гарантии</a> 
+        </li>
+        <li>
+          <a href="#">Контакты</a> 
+        </li>
+      </ul>
     </header>
 
-    <!--ЗАГОЛОВОК ТАБЛИЦЫ С КАРТОЧКАМИ--------------------------------------------------------------------------------------------------------->
-    <section>
-      <p>Фильтр:</p>
-      <p>Сортировка:</p>
-      <p>По цене</p>
-      <p>По типу</p>
-      <p>По популярности</p>
-      <!--Угол Вверх-->
-      <!--Угол Вниз-->      
-      <!--Прямоугольник 468×70-->
-      <!--Прямоугольник 942×70-->
-    </section>
+    <main>
+      <h2>Моноподы для селфи</h2>
+      <fieldset>
+        <!--Картинка 760-70-->
+        <ul>
+          <li>
+            <a href="#">Главная  </a>
+          </li>
+          <li>
+            <a href="#">Каталог товаров</a>
+          </li>
+          <li>
+            <a>Моноподы для селфи</a>
+          </li>
+        </ul>
+      </fieldset>
+      <section>
+        <p>Фильтр:</p>
+        <p>Сортировка:</p>
+        <ul>
+          <li>
+            <p>По цене</p>
+          </li>
+          <li>
+            <p>По типу</p>
+          </li>
+          <li>
+            <p>По популярности</p>
+          </li>
+        </ul>
+        <p>
+          <button type="submit">Вверх</button>
+          <!--Угол Вверх-->
+          <button type="submit">Вниз</button>
+          <!--Угол Вниз-->   
+        </p>
+        
+           
 
-    <!--ФИЛЬТР--------------------------------------------------------------------------------------------------------->
-   <section>
+        <!--Прямоугольник 468×70-->
+        <!--Прямоугольник 942×70-->
+      </section>
+
+      <h2>Фильтр товаров</h2>
       <!--Прямоугольник 468×1214-->
-
-      <!--СТОИМОСТЬ--------------------------------------------------------------------------------------------------------->
       <!--Линия 200-2-->
       <section>
-        <h2>Стоимость</h2>
+        <h3>Стоимость</h3>
         <!--Шкала-->
         <!--Уровень на шкале-->
         <!--Ползунок1 - Большой круг-->
@@ -80,210 +104,228 @@
         <p>до 5000</p>
       </section>
 
-      <!--ВЫБОР ЦВЕТА--------------------------------------------------------------------------------------------------------->
-      <section>
-        <h2>Цвет</h2>
-        <!--Линия 200-2-->
-        <!--checkbox-on-->
-        <p>Чёрный</p>
-        <!--checkbox-on-->
-        <p>Белый></p>
-        <!--checkbox-on-->
-        <p>Синий></p>
-        <!--checkbox-on-->
-        <p>Красный></p>
-        <!--checkbox-off-->
-        <p>Розовый></p>
-      </section>
+      <!--Линия 200-2-->
+      <form method="get" action="https://acho.htmlacademy.ru">
 
-      <!--BLUETOOTH--------------------------------------------------------------------------------------------------------->
-      <section>
-        <h2>Bluetooth</h2>
-        <!--Радиокнопка - Большая окружность-->
-        <!--Радиокнопка - Малая окружность (внутренний)-->
-        <p>Есть></p>
-        <!--Радиокнопка - Большая окружность-->
-        <p>Нет></p>
-      </section>
+        <fieldset>
+          <Legend>Цвет</legend>
+          <ul>
 
-      <!--ПОКАЗАТЬ--------------------------------------------------------------------------------------------------------->
-      <section>
-        
-        <p>Показать</p>
-        <svg width="200" height="8">
-          <rect width="200" height="8" style="fill:#F0C52E;stroke-width:1;stroke:#91C92F" />
-        </svg>
-        
-      </section>
-    </section>
+            <li>
+              <input type="checkbox" name="Чёрный" id="filter-black" checked>
+              <label for="filter-black">Чёрный</label>
+            </li>
 
+            <li>
+              <input type="checkbox" name="Белый" id="filter-white">
+              <label for="filter-white">Белый</label>
+            </li>
 
-    <!--ЧЕТЫРЕ КАРТОЧКИ--------------------------------------------------------------------------------------------------------->
-      <a>
-        <img src="img/item-1 1.png" width="360" height="380" alt="">           
-      </a>
+            <li>
+              <input type="checkbox" name="Синий" id="filter-blue" checked>
+              <label for="filter-blue">Синий</label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="Красный" id="filter-red" checked>
+              <label for="filter-red">Красный</label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="Розовый" id="filter-pink">
+              <label for="filter-pink">Розовый</label>
+            </li>
+
+          </ul>
+        </fieldset>
       
-      <a>
-        <img src="img/item-2 1.png" width="360" height="380" alt="">           
-      </a>
+        <h3>Bluetooth</h3>
+        <fieldset>
+          <Legend>Цвет</legend>
+          <ul>
+            <li>
+              <input type="radio" name="Есть" id="filter-on_bluetooth" checked>
+              <label for="filter-on_bluetooth">Есть</label>
+            </li>
+            <li>
+              <input type="radio" name="Нет" id="filter-off_bluetooth">
+              <label for="filter-off_bluetooth">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
 
-      <a>
-        <img src="img/item-3 1.png" width="360" height="380" alt="">           
-      </a>
 
-      <a>
-        <img src="img/item-4 1.png" width="360" height="380" alt="">           
-      </a>
+      <fieldset>
+        <h2>Список товаров</h2>
+        <ul>
+          <li>
+            <a href="#">
+              <h3>Любительская селфи-палка</h3>
+              <p>
+                <img src="#" width="360" height="380" alt="Любительская селфи-палка">
+              </p>
+            </a>
+            <p>
+              1100 руб.
+              <button type="submit">Купить</button>
+              <button type="submit">Добавить к сравнению</button>
+            </p>
+          </li>
 
-    <!--ОПИСАНИЕ КАРТОЧКИ 1--------------------------------------------------------------------------------------------------------->
-    <section>
-      <p>Любительская селфи-палка</p>
-      <p>1 100 руб.</p>
-    </section>
+          <li>
+            <a href="#">
+              <h3>Профессиональная селфи-палка</h3>
+              <p>
+                <img src="#" width="360" height="380" alt="Профессиональная селфи-палка">
+              </p>
+            </a>
+            <p>
+              1500 руб.
+            </p>
+          </li>
 
-    <!--ОПИСАНИЕ КАРТОЧКИ 2--------------------------------------------------------------------------------------------------------->
-    <section>
-      <p>Профессиональная селфи-палка </p>
-      <p>1 500 руб.</p>
-    </section>
+          <li>
+            <a href="#">
+              <h3>Непотопляемая селфи-палка</h3>
+              <p>
+                <img src="#" width="360" height="380" alt="Непотопляемая селфи-палка">
+              </p>
+            </a>
+            <p>
+              1500 руб.
+            </p>
+          </li>
 
-    <!--ОПИСАНИЕ КАРТОЧКИ 3--------------------------------------------------------------------------------------------------------->
-    <section>
-      <p>Непотопляемая селфи-палка</p>
-      <p>1 500 руб.</p>
-    </section>
+          <li>
+            <a href="#">
+              <h3>Селфи-палка «Следуй за мной»</h3>
+              <p>
+                <img src="#" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+              </p>
+            </a>
+            <p>
+              1900 руб.
+            </p>
+            <!--Картинка Новый товар-->
+          </li>
+        </ul>
+      </fieldset>
 
-    <!--ОПИСАНИЕ КАРТОЧКИ 4--------------------------------------------------------------------------------------------------------->
-    <section>
-      <p>Селфи-палка «Следуй за мной»</p>
-      <p>1 900 руб.</p>
-    </section>
+      <fieldset>
+        <!--Картинка 760-70-->
+        <ul>
+          <li>
+            <a href="#">Назад</a>
+          </li>
+          <li>
+            <a>1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">4</a>
+          </li>
+          <li>
+            <a href="#">Вперед</a>
+          </li>
+        </ul>
+      </fieldset>
+    </main>
 
-    <!--ТОВАР ВЫБРАННЫЙ--------------------------------------------------------------------------------------------------------->
-    <section>
-      <h2>Item hover</h2>
 
-      <svg width="360" height="381">
-        <rect width="360" height="381" style="fill:#EEEEEE;stroke-width:3;stroke:#020202" />
-      </svg>
 
-      <!--КНОПКА В КОРЗИНУ--------------------------------------------------------------------------------------------------------->
+    <Footer>
+      <!--Картинка Прямоугольник 1440-324-->
+      <p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">Device
+        <!--Картинка Логотип Device--></a>
+      </p>
+      <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+      <!--Картинка Прямоугольник 80-7-->
+
+      <ul>
+        <li>
+          <a href="https://web.facebook.com/">Facebook</a>
+          <!--Картинка logo-Facebook-->
+        </li>
+        <li>
+          <a href="https://www.instagram.com/">Instagram</a>
+          <!--Картинка logo-2 1-->
+        </li>
+        <li>
+          <a href="https://twitter.com/">twitter</a>
+          <!--Картинка logo-3 1-->
+        </li>
+      </ul>
+      
+      <ul>
+        <li>
+          <a href="#">Доставка</a>
+        </li>
+        <li>
+          <a href="#">Гарантии</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+
       <section>
-        <p>В КОРЗИНУ</p>
-        
-        <svg width="200" height="8">
-          <rect width="200" height="8" style="fill:#F0C52E;stroke-width:1;stroke:#F0C52E" />
-        </svg>
+        <h2>Отправить письмо</h2>
+        <form action="https://acho.htmlacademy.ru" name="Форма отправки данных пользователя" method="post">
+          <p>
+            <label for="appointment-date">Ваше имя:</label>
+            <input id="appointment-date" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="appointment-date">Ваш e-mail:</label>
+            <input id="appointment-date" type="email" name="e-mail" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="appointment-date">Текст письма:</label>
+            <input id="appointment-date" type="text" name="text" placeholder="В свободной форме">
+          </p>
+        </form>
+        <!--Картинка Прямоугольник 360-50-->
+        <button type="button">Закрыть</button>
+        <button type="button">Отправить</button>
 
       </section>
 
-      <p>Добавить к сравнению</p>
-
-    </section>
-
-
-    <!--НОВЫЙ ТОВАР--------------------------------------------------------------------------------------------------------->
-    <section>
-      <svg height="100" width="100">
-        <ellipse cx="62" cy="62" rx="31" ry="31" style="fill:rgb(255, 255, 255);stroke:rgb(139, 139, 139);stroke-width:2"/>
-      </svg> 
-
-      <p>NEW</p>
-
-    </section>
-
-    <!--ВЫБОР СТРАНИЦ--------------------------------------------------------------------------------------------------------->
-    <select>
-      <h2>Item hover</h2>
-
-      <svg width="760" height="70">
-        <rect width="760" height="70" style="fill:#EBEBEB;stroke-width:1;stroke:#EBEBEB" />
-      </svg>
-
-      <p>назад</p>
-      <p>1</p>
-      <p>2</p>
-      <p>3</p>
-      <p>вперёд</p>
-
-    </select>
-
-    <!--ФУТЕР--------------------------------------------------------------------------------------------------------->
-    <Footer>
-
-      <svg width="1440" height="324">
-        <rect width="1440" height="324" style="fill:#363636;stroke-width:1;stroke:#363636" />
-      </svg>
-
-      <a>
-        <img src="img/logo.svg" width="163" height="35" alt="">           
-      </a>
-
-      <a>
-        <img src="img/icon_user.svg" width="16" height="16" alt="">           
-      </a>
-
-      <a href="#">Валентин Петухов</a> 
-
       <section>
-          <a href="#">Выйти</a>
-        <a>
-          <img src="img/icon_user.svg" width="16" height="16" alt="">  <! -- Скрытая -->         
-        </a>
-
-
-        <a href="#">Сравнить</a>
-        <a>
-          <img src="img/icon_chart.svg" width="16" height="16" alt="">           
-        </a>
-
-        <a href="#">Корзина</a>
-        <a>
-          <img src="img/basket.svg" width="16" height="16" alt="">           
-        </a>
-
+        <p>
+          <a href="#">Валентин Петухов</a> 
+          <!--Картинка Пользователь-->
+        </p>
+        <p>
+          <a href="#">Выйти</a> 
+          <!--Картинка Пользователь-->
+        </p>
+        <p>
+          <a href="#">Сравнить</a>
+          <!--Картинка Сравнить-->
+        </p>
+        <p>
+          <a href="#">Корзина</a>
+          <!--Картинка Корзина-->
+        </p>
       </section>
 
       <p>
-        Санкт-Петербург, набережная реки Карповки, 5, литера П.
+        Тел:
+        <a href="tel: +78005558628">+7 800 555-86-28</a>
       </p>
-      
-      <svg width="80" height="7">
-        <rect width="80" height="7" style="fill:yellow;stroke-width:1;stroke:yellow" />
-      </svg>
-  
 
-      
-      <section>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">Htmlacademy
+        <!--Картинка Логотип Htmlacademy -->
+      </a>
 
-        <h2>socials</h2>
-
-
-          <img src="img/simple-icons_facebook.svg" width="32" height="32" alt="">           
-
-
-
-          <img src="img/icon_instagram.svg" width="32" height="32" alt="">           
-
-
-
-          <img src="img/icon_witter.svg" width="32" height="32" alt="">           
-
-      </section>
-      
-      <a href="Тел: +7 800 555-86-28">Тел: +7 800 555-86-28</a>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_htmlacademy.svg" src="" width="115" height="33.03" alt=""></a>
-
-      <nav>
-        <h2>Меню_footer</h2>
-        <a href="#">Доставка</a>
-        <a href="#">Гарантии</a>
-        <a href="#">Контакты</a>
-      </nav>
-
-    </Footer>
-   
-  </main>
-
+    </footer>
   </body>
 </html>
