@@ -1,37 +1,42 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-
+    
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
 
-  <body>
-
+  <body class="page-body">
     <header>
-
       <section>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">Device
-          <!--Картинка Логотип Device-->
-        </a>
+        <nav>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">Device
+            <img src="img/logo1.svg" width="163" height="35" alt="">
+          </a>
 
-        <p>
-          <a href="#">Поиск по сайту</a>
-        </p> 
-        <!--Картинка Лупа-->
-        <a href="#">Войти</a> 
-        <!--Картинка Пользователь-->
-        <a href="#">Сравнить</a>
-        <!--Картинка Сравнить-->
-        <a href="#">Корзина</a>
-        <!--Картинка Корзина-->
+          <form>
+            <input type="text" placeholder="Поиск по сайту">
+            <button type="submit"></button>
+          </form>
+          <!--Картинка Лупа-->
+
+          <a href="#">Войти</a> 
+          <!--Картинка Пользователь-->
+          <a href="#">Сравнить</a>
+          <!--Картинка Сравнить-->
+          <a href="#">Корзина</a>
+          <!--Картинка Корзина-->
+        </nav>
 
         <ul>
           <li>
             <a href="catalog.html">Каталог товаров</a>
-            <button type="submit">+</button>
-            <!--Картинка Плюс-->
+            <a> <img src="img/icon_search.svg" width="16" height="16" alt=""> </a>
           </li>
           <li>
             <a href="#">Доставка</a> 
@@ -43,33 +48,37 @@
             <a href="#">Контакты</a> 
           </li>
         </ul>
-        <!--Картинка Линия белая 100-70-->
       </section>
 
-      <p>Виртуальная реальность</p>
-      <p>Фитнес-браслеты</p>
-      <p>Квадрокоптер</p>
-      <p>Моноподы для селфи</p>
-      <p>Экшн-камеры</p>
-      <!--Прямоугольник желтый 1160-146-->
+      <ul>
+        <li>
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li>
+          <a href="#">Квадрокоптер</a> 
+        </li>
+        <li>
+          <a href="#">Моноподы для селфи</a> 
+        </li>
+        <li>
+          <a href="#">Экшн-камеры</a> 
+        </li>
+      </ul>
 
       <!--СЛАЙДЕР 1--------------------------------------------------------------------------------------------------------->
       <section>
-       <!--Картинка 03-->
-       <!--Картинка товара--> 
-       <p>Пархает как бабочка, жалит как пчела!</p>
-       <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-       
-        <section>
-          <a href="#">Подробнее</a>
-          <button type="button">Подробнее</button>
-        </section>
-
-        <section>
-          <!--Картинка slider-button-empty-->  
-          <!--Картинка slider-button-empty-->  
-          <!--Картинка slider-button-->  
-        </section>
+        <a>
+          <img src="#" width="212" height="170" alt="">        <!--img/03.svg-->
+        </a>
+        <img src="#" width="526" height="334" alt="">  <!--Картинка товара img/slider-3 1.png--> 
+        <p>Пархает как бабочка, жалит как пчела!</p>
+        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+        
+        <button type="button">Подробнее</button>
+        
+        <img src="#" width="12" height="12" alt="">   <!--img/slider-button-empty.svg-->
+        <img src="#" width="12" height="12" alt="">   <!--img/slider-button-empty.svg-->
+        <img src="#" width="12" height="12" alt="">   <!--img/slider-button.svg-->
 
         <ul>
           <li>
@@ -96,37 +105,31 @@
         <ul>
           <li>
             <a href="#">Виртуальная реальность</a>
-            <!--Картинка Квадрат 160-160-->     
             <!--Картинка popular-1-->    
           </li>
 
           <li>
             <a href="#">Моноподы для селфи</a>
-            <!--Картинка Квадрат 160-160-->    
             <!--Картинка popular-2-->     
           </li>
 
           <li>
             <a href="#">Экшн-камеры</a>
-            <!--Картинка Квадрат 160-160-->
             <!--Картинка popular-3-->    
           </li>
 
           <li>
             <a href="#">Фитнес-браслеты</a>
-            <!--Картинка Квадрат 160-160-->
             <!--Картинка popular-4-->       
           </li>
 
           <li>
             <a href="#">Умные часы</a>
-            <!--Картинка Квадрат 160-160-->
             <!--Картинка popular-5-->
           </li>
 
           <li>
             <a href="#">Квадрокоптеры</a>
-            <!--Картинка Квадрат 160-160-->
             <!--Картинка popular-6-->
           </li>
 
@@ -135,16 +138,18 @@
 
       <section>
         <h2>Доставка</h2>
-
-        <nav>
-          <p>Доставка</p>
-          <!--Картинка Полоса 277-40-->  
-          <p>Гарантия</p>
-          <!--Картинка Полоса 160-8--> 
-          <p>Кредит</p>
-          <!--Картинка Полоса 160-8-->   
-          <!--Картинка Полоса 7-320-->
-        </nav>
+        
+        <ul>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a> 
+          </li>
+          <li>
+            <a href="#">Кредит</a> 
+          </li>
+        </ul>
 
         <section>
           <h3>Доставка</h3>
@@ -152,34 +157,28 @@
          <!--Картинка Бегущий человек-->
         </section>
         
-       <!--Картинка Прямоугольник 1440-288--> 
       </section>
 
       <section>
-        <h2>logotypes</h2>
+        <h2>Компании-партнеры</h2>
 
         </ul>
-
           <li>
             <a href="https://gopro.com/ru/ru/">GOORO</a>
             <!--Картинка logo-1 1-->
           </li>
-
           <li>
             <a href="https://www.vive.com/ru/">VIVE</a>
             <!--Картинка logo-2 1-->
           </li>
-
           <li>
             <a href="https://www.dji.com/">DJI</a>
             <!--Картинка logo-3 1-->
           </li>
-
           <li>
             <a href="https://sp-connect.com/">SP GADGETS</a>
             <!--Картинка logo-4 1-->
           </li>
-
         </ul>
 
       </section>
@@ -187,57 +186,45 @@
       <section>
         <h2>О нас</h2>
 
-        <!--Картинка Прямоугольник 260-8-->
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
 
         <ul>
           <h3>Group4</h3>
-
           <li>
           <p>Деловые линии</p>
           <!--Картинка Окружность-->
           </li>
-          
           <li>
           <p>Автотрейдинг</p>
           <!--Картинка Окружность-->
           </li>
-
           <li>
           <p>ЖелДорЭкспедиция</p>
           <!--Картинка Окружность-->   
           </li>
-          
         </ul>
 
-        <section>
-          <button type="button">Подробнее о нас</button>
-        </section>
+        <button type="button">Подробнее о нас</button>
 
       </section>
 
       <section>
         <h2>Контакты<h2>
-        <!--Картинка Прямоугольник 80-7-->
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <!--Картинка Карта 560-222-->
         <a href="#">Напишите нам</a>
-        <!--Картинка Прямоугольник 260-8-->
       </section>
     </main> 
 
 
     <footer>
 
-      <!--Картинка Прямоугольник 1440-324-->
       <p>
         <a href="https://htmlacademy.ru/intensive/htmlcss">Device
         <!--Картинка Логотип Device--></a>
       </p>
   
       <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      <!--Картинка Прямоугольник 80-7-->
   
       <ul>
         <li>
@@ -260,40 +247,13 @@
         <li>
           <a href="#">Доставка</a>
         </li>
-
         <li>
           <a href="#">Гарантии</a>
         </li>
-
         <li>
           <a href="#">Контакты</a>
         </li>
       </ul>
-
-      <section>
-        <h2>Отправить письмо</h2>
-        
-        <form action="https://acho.htmlacademy.ru" name="Форма отправки данных пользователя" method="post">
-          <p>
-            <label for="appointment-date">Ваше имя:</label>
-            <input id="appointment-date" type="text" name="name" placeholder="Имя Фамилия">
-          </p>
-          <p>
-            <label for="appointment-date">Ваш e-mail:</label>
-            <input id="appointment-date" type="email" name="e-mail" placeholder="email@example.com">
-          </p>
-          <p>
-            <label for="appointment-date">Текст письма:</label>
-            <input id="appointment-date" type="text" name="text" placeholder="В свободной форме">
-          </p>
-        </form>
-        <!--Картинка Прямоугольник 360-50-->
-        <button type="button">Закрыть</button>
-        <p>Отправить</p>
-        <!--Картинка КНОПКА ОТПРАВИТЬ-->
-        <!--Картинка Кнопка закрытия-->
-
-      </section>
 
       <section>
         <a href="#">Войти</a> 
@@ -314,5 +274,31 @@
       </a>
 
     </footer>
+
+      <section>
+        <h2>Отправить письмо</h2>
+        
+        <form action="https://acho.htmlacademy.ru" name="Форма отправки данных пользователя" method="post">
+          <p>
+            <label for="appointment-date">Ваше имя:</label>
+            <input id="appointment-date" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="appointment-date">Ваш e-mail:</label>
+            <input id="appointment-date" type="email" name="e-mail" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="appointment-date">Текст письма:</label>
+            <input id="appointment-date" type="text" name="text" placeholder="В свободной форме">
+          </p>
+        </form>
+        <button type="button">Закрыть</button>
+        <button type="button">Отправить</button>
+
+        <!--Картинка КНОПКА ОТПРАВИТЬ-->
+        <!--Картинка Кнопка закрытия-->
+
+      </section>
+
   </body>
 </html>

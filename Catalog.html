@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
   <body>
@@ -47,9 +52,8 @@
     </header>
 
     <main>
-      <h2>Моноподы для селфи</h2>
-      <fieldset>
-        <!--Картинка 760-70-->
+      <h1>Моноподы для селфи</h1>
+      <select>
         <ul>
           <li>
             <a href="#">Главная  </a>
@@ -61,37 +65,11 @@
             <a>Моноподы для селфи</a>
           </li>
         </ul>
-      </fieldset>
-      <section>
-        <p>Фильтр:</p>
-        <p>Сортировка:</p>
-        <ul>
-          <li>
-            <p>По цене</p>
-          </li>
-          <li>
-            <p>По типу</p>
-          </li>
-          <li>
-            <p>По популярности</p>
-          </li>
-        </ul>
-        <p>
-          <button type="submit">Вверх</button>
-          <!--Угол Вверх-->
-          <button type="submit">Вниз</button>
-          <!--Угол Вниз-->   
-        </p>
-        
-           
-
-        <!--Прямоугольник 468×70-->
-        <!--Прямоугольник 942×70-->
       </section>
 
       <h2>Фильтр товаров</h2>
-      <!--Прямоугольник 468×1214-->
-      <!--Линия 200-2-->
+
+      <p>Фильтр:</p>
       <section>
         <h3>Стоимость</h3>
         <!--Шкала-->
@@ -104,44 +82,36 @@
         <p>до 5000</p>
       </section>
 
-      <!--Линия 200-2-->
       <form method="get" action="https://acho.htmlacademy.ru">
 
         <fieldset>
           <Legend>Цвет</legend>
           <ul>
-
             <li>
               <input type="checkbox" name="Чёрный" id="filter-black" checked>
               <label for="filter-black">Чёрный</label>
             </li>
-
             <li>
               <input type="checkbox" name="Белый" id="filter-white">
               <label for="filter-white">Белый</label>
             </li>
-
             <li>
               <input type="checkbox" name="Синий" id="filter-blue" checked>
               <label for="filter-blue">Синий</label>
             </li>
-
             <li>
               <input type="checkbox" name="Красный" id="filter-red" checked>
               <label for="filter-red">Красный</label>
             </li>
-
             <li>
               <input type="checkbox" name="Розовый" id="filter-pink">
               <label for="filter-pink">Розовый</label>
             </li>
-
           </ul>
         </fieldset>
-      
-        <h3>Bluetooth</h3>
+
         <fieldset>
-          <Legend>Цвет</legend>
+          <Legend>Bluetooth</legend>
           <ul>
             <li>
               <input type="radio" name="Есть" id="filter-on_bluetooth" checked>
@@ -156,8 +126,28 @@
         <button type="submit">Показать</button>
       </form>
 
+      <section>
+        <p>Сортировка:</p>
+        <ul>
+          <li>
+            <button type="submit">По цене</button>
+          </li>
+          <li>
+            <button type="submit">По типу</button>
+          </li>
+          <li>
+            <button type="submit">По популярности</button>
+          </li>
+        </ul>
+        <p>
+          <button type="submit">Вверх</button>
+          <!--Картинка Вверх-->
+          <button type="submit">Вниз</button>
+          <!--Картинка Вниз-->   
+        </p>
+      </section>
 
-      <fieldset>
+      <select>
         <h2>Список товаров</h2>
         <ul>
           <li>
@@ -211,10 +201,9 @@
             <!--Картинка Новый товар-->
           </li>
         </ul>
-      </fieldset>
+      </select>
 
-      <fieldset>
-        <!--Картинка 760-70-->
+      <select>
         <ul>
           <li>
             <a href="#">Назад</a>
@@ -235,13 +224,10 @@
             <a href="#">Вперед</a>
           </li>
         </ul>
-      </fieldset>
+      </select>
     </main>
 
-
-
-    <Footer>
-      <!--Картинка Прямоугольник 1440-324-->
+    <footer>
       <p>
         <a href="https://htmlacademy.ru/intensive/htmlcss">Device
         <!--Картинка Логотип Device--></a>
