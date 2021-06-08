@@ -1,0 +1,161 @@
+/*Variables*/
+
+:root {
+	--basic-black: #000000;
+	--basic-extra-dark: #242424;
+	--basic-dark: #aba9a7;
+	--basic-neutral: #e5e5e5;
+	--basic-extra-light: #f8f5f2;
+	--basic-white: #ffffff;
+
+	--special: #663d15;
+}
+
+/*Global*/
+
+h2 {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 100%;
+}
+
+
+body {
+	min-width: 960px;
+	margin: 0px;
+	padding: 0;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 28px;
+	font-weight: 300;
+	color: var(--basic-black);
+	text-transform:var(--basic-black);
+	background-color: var(--basic-black);
+	/*background-image: url("img/bg.jpg");*/
+	background-position: top center;
+	background-repeat: no-repeat;
+
+
+}
+
+a {
+	text-decoration: none;
+}
+
+/*Main navigation*/
+
+.main-navigation {
+	font-size: 16px;
+	line-height: 20px;
+	color: var(--basic-black);
+	background-color: transparent;
+}
+
+.main-navigation-wraper {
+	background-color: var(--basic-black);
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+
+
+
+
+
+
+
+
+/*Button*/
+.button {
+font: inherit
+text-align: center;
+color: var(--basic-white);
+vertical-align: middle;
+text-transform: uppercase;
+background-color: var(--basic-black);
+border: none;
+}
+
+.button:hover,
+
+}
+
+.logo  {
+	font-size: 15px;
+	line-height: 64px;
+
+}
+
+
+.logo-header-color {
+	fill: #e22121;
+}
+
+.logo-footer-color {
+	currentColor: #F0C52E;
+}
+
+
+
+
+.text {
+	font-size: 15px;
+	line-height: 64px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+* {box-sizing: border-box;}
+form {
+  width: auto;
+  float: right;
+  margin-right: 30px;
+}
+
+input {
+  width: 250px;
+  height: 42px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  background: #F9F0DA;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+}
+
+input:focus {
+  width: 300px;
+}
+
+button {
+  width: 42px;
+  height: 42px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+
+button:before{
+  content: "\f002";
+  font-family: FontAwesome;
+  color: #324b4e;
+}
