@@ -13,6 +13,12 @@
 
 /*Global*/
 
+h1 {
+
+
+
+}
+
 h2 {
 	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 47px;
@@ -82,9 +88,8 @@ border: none;
 
 }
 
-.logo  {
-	font-size: 15px;
-	line-height: 64px;
+.logo {
+
 }
 
 
@@ -93,7 +98,7 @@ border: none;
 }
 
 .logo-footer-color {
-	currentColor: #F0C52E;
+	fill: #F0C52E;
 }
 
 
@@ -156,4 +161,13 @@ button:before{
   content: "\f002";
   font-family: FontAwesome;
   color: #324b4e;
+}
+
+
+
+
+.logo_htmlacademy {
+
+
+
 }
