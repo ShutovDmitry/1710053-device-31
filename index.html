@@ -9,31 +9,31 @@
     <link rel="apple-touch-icon" href="favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
 
-	 <link href="normalize.css" rel="stylesheet">
-	 <link href="style.css" rel="stylesheet">
+	 <link href="css/normalize.css" rel="stylesheet">
+	 <link href="css/style.css" rel="stylesheet">
   </head>
 
 
   <body class="page-body">
     <header class="main-header">
       <section>
-        <nav  class="main-navigation">
-          <a
-			 	class="logo, logo-header-color"
-			 	href="index.html">
-            <img src="img/logo1.svg"
-				width="163"
-				height="35"
-				alt="Логотип магазина гаджетов Device">
-          </a>
-          <form>
-            <input class="Light" type="text" placeholder="Поиск по сайту">
-            <button type="submit"></button>
-          </form>
-          <a class="header-item" href="#">Войти</a>
-          <a class="header-item" href="#">Сравнить</a>
-          <a class="header-item" href="#">Корзина</a>
-        </nav>
+
+			<a
+			class="logo-header-color"
+			href="index.html">
+			<img src="img/logo1.svg"
+			width="163"
+			height="35"
+			alt="Логотип магазина гаджетов Device">
+			</a>
+			<form>
+			<input class="light" type="text" placeholder="Поиск по сайту">
+			<button type="submit"></button>
+			</form>
+			<a class="header-item" href="#">Войти</a>
+			<a class="header-item" href="#">Сравнить</a>
+			<a class="header-item" href="#">Корзина</a>
+
 
         <ul class="site-navigation">
           <li>
@@ -74,8 +74,14 @@
 
       <!--СЛАЙДЕР 1--------------------------------------------------------------------------------------------------------->
       <section>
-        <!--картинка 03-->
-        <img src="img/catalog/quadcopter_1.png" width="526" height="334" alt="">
+      	<!--картинка 03-->
+       	<img
+				class="quadcopter_1"
+				src="img/catalog/quadcopter_1.png"
+				width="526"
+				height="334"
+				alt=""
+			>
 
         <p>Пархает как бабочка, жалит как пчела!</p>
         <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -108,35 +114,38 @@
       <section>
         <h2>Группы товаров</h2>
 
-        <ul>
+        <ul class= "popular">
           <li>
-            <a href="#">Виртуальная реальность</a>
+            <a
+					class= "popular_item"
+					href="#">Виртуальная реальность
+				</a>
             <img src="img/popular/stereoscopic_3d_headset.svg" width="97" height="55" alt="Пиктограмма Стереоскопическая 3D-гарнитура">
           </li>
 
           <li>
-            <a href="#">Моноподы для селфи</a>
+            <a class= "popular_item" href="#">Моноподы для селфи</a>
             <img src="img/popular/selfie_stick.svg" width="85.87" height="117" alt="Пиктограмма Селфи палка">
           </li>
 
           <li>
-            <a href="#">Экшн-камеры</a>
+            <a class= "popular_item" href="#">Экшн-камеры</a>
             <img src="img/popular/action_camera.svg" width="71.02" height="87" alt="Пиктограмма Экшн-камеры">
           </li>
 
           <li>
-            <a href="#">Фитнес-браслеты</a>
-            <img src="img/popular/fitness_bracelet.svg" width="107" height="65" alt="Пиктограмма фитнес браслета">
+            <a class= "popular_item" href="#">Фитнес-браслеты</a>
+            <img src="img/popular/fitness_bracelet.svg" width="107" height="65" alt="Пиктограмма Фитнес браслета">
           </li>
 
           <li>
-            <a href="#">Умные часы</a>
+            <a class= "popular_item" href="#">Умные часы</a>
             <img src="img/popular/smart_watch.svg" width="56.01" height="97.98" alt="Пиктограмма Смарт часы">
 			 </li>
 
           <li>
-            <a href="#">Квадрокоптеры</a>
-            <img src="img/popular/quadcopter.svg" width="132" height="69" alt="Пиктограмма Квадрокоптер, воздушный дрон, Аэросъемка">
+            <a class= "popular_item" href="#">Квадрокоптеры</a>
+            <img src="img/popular/quadcopter.svg" width="132" height="69" alt="Пиктограмма Квадрокоптер, Воздушный дрон, Аэросъемка">
           </li>
 
         </ul>
@@ -145,21 +154,21 @@
       <section>
         <h2>Доставка</h2>
 
-        <ul class="">
+        <ul class="services">
           <li>
-            <a  href="#">Доставка</a>
+            <a class="services_item" href="#">Доставка</a>
           </li>
           <li>
-            <a href="#">Гарантия</a>
+            <a class="services_item" href="#">Гарантия</a>
           </li>
           <li>
-            <a href="#">Кредит</a>
+            <a class="services_item" href="#">Кредит</a>
           </li>
         </ul>
 
         <section>
          <h3>Доставка</h3>
-         <p> class="Text1" Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+         <p> Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             <!--бегущий человек-->
         </section>
 
@@ -192,8 +201,8 @@
       <section>
         <h2>О нас</h2>
 
-        <p> class="Text2" Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p> class="Text2" Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <p> Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p> Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
 
         <ul class="Group4">
           <h3>Group4</h3>
@@ -231,7 +240,7 @@
     <footer class="maun-footer">
 
       <a
-			class="logo, logo-footer-modificator"
+			class="logo, logo-footer-color"
 
 			href="index.html">Device
       	<img src="img/logo1.svg"

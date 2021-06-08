@@ -64,7 +64,19 @@ a {
 	list-style: none;
 }
 
+.services {
 
+
+
+}
+
+
+
+.services_item {
+
+
+
+}
 
 
 
@@ -170,3 +182,20 @@ button:before{
 
 
 }
+
+
+
+/* Стиль списка */
+ul.breadcrumb {
+	padding: 10px 16px;
+	list-style: none;
+	background-color: #eee;
+ }
+
+/* Добавить символ косой черты (/) перед/за каждым элементом списка */
+ul.breadcrumb li+li:before {
+	padding: 8px;
+	color: black;
+	content: "/\00a0";
+ }
+

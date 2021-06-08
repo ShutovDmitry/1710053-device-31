@@ -8,55 +8,81 @@
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
-  </head>
+	 <link href="css/normalize.css" rel="stylesheet">
+	 <link href="css/style.css" rel="stylesheet">
+
+	</head>
 
   <body>
     <header>
 
-      <a href="index.html">Device
-        <img src="img/logo1.svg" width="163" height="35" alt="Логотип магазина гаджетов Device">
-      </a>
-      <p>
-        <a href="#">Поиск по сайту</a>
-      </p>
-      <p>
-        <a href="#">Войти</a>
-      </p>
-      <p>
-        <a href="#">Сравнить</a>
-      </p>
-      <p>
-        <a href="#">Корзина</a>
-      </p>
+		<a
+			class="logo-header-color"
+			href="index.html">
+			<img src="img/logo1.svg"
+			width="163"
+			height="35"
+			alt="Логотип магазина гаджетов Device">
+		</a>
+		<form>
+			<input class="search-input" type="text" placeholder="Поиск по сайту">
+			<button type="submit"></button>
+		</form>
+		<a class="header-item" href="#">Валентин Петухов</a>
+		<a class="header-item-color" href="#">Выйти</a>
+		<a class="header-item" href="#">Сравнить</a>
+		<a class="header-item" href="#">Корзина</a>
 
-      <ul>
-        <li>
-          <a href="catalog.html">Каталог товаров</a>
-          <!--Картинка Плюс-->
-        </li>
-        <li>
-          <a href="#">Доставка</a>
-        </li>
-        <li>
-          <a href="#">Гарантии</a>
-        </li>
-        <li>
-          <a href="#">Контакты</a>
-        </li>
+		<ul class="site-navigation">
+			<li>
+				<a class="site-item" href="catalog.html">Каталог товаров</a>
+			</li>
+			<li>
+			  <a class="site-item" href="#">Доставка</a>
+			</li>
+			<li>
+			  <a class="site-item" href="#">Гарантии</a>
+			</li>
+			<li>
+			  <a class="site-item" href="#">Контакты</a>
+			</li>
+		</ul>
+
+		<ul class="catalog-list">
+      	<li>
+         	<a class="catalog-item" href="#">Виртуальная реальность</a>
+      	</li>
+			<li>
+				<a class="catalog-item" href="#">Фитнес-браслеты</a>
+			</li>
+			<li>
+				<a class="catalog-item" href="#">Квадрокоптер</a>
+			</li>
+			<li>
+				<a class="catalog-item" href="#">Моноподы для селфи</a>
+			</li>
+			<li>
+				<a class="catalog-item" href="#">Умные часы</a>
+			</li>
+			<li>
+				<a class="catalog-item" href="#">Экшн-камеры</a>
+			</li>
       </ul>
+
     </header>
 
+
     <main>
-      <h1>Моноподы для селфи</h1>
+      <h2>Моноподы для селфи</h2>
       <section>
-        <ul>
+        <ul class="breadcrumb">
           <li>
             <a href="#">Главная  </a>
           </li>
           <li>
             <a href="#">Каталог товаров</a>
           </li>
-          <li>
+          <li class="active">
             <a>Моноподы для селфи</a>
           </li>
         </ul>
