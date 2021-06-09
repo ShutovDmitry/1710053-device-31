@@ -2,20 +2,22 @@
 
 :root {
 	--basic-black: #000000;
-	--basic-extra-dark: #242424;
-	--basic-dark: #aba9a7;
-	--basic-neutral: #e5e5e5;
-	--basic-extra-light: #f8f5f2;
+	--basic-dark: #363636;
 	--basic-white: #ffffff;
-
-	--special: #663d15;
+	--basic-grey: #464646;
+	--basic-half-grey: #7E7E7E;
+	--basic-grey-light: #E5E5E5;
+	--basic-extra-light: #F7E296;
+	--special-yellow: #F7E296;
+	--special-green: #91C92F;
+	--special-yellow-dark: #F0C52E;
+	/*  --white-30: #ffffff;  Прозрачный цвет 30%*/
+	/*  --white-60: #ffffff;  Прозрачный цвет 60%*/
 }
 
 /*Global*/
 
 h1 {
-
-
 
 }
 
@@ -25,20 +27,18 @@ h2 {
 	line-height: 100%;
 }
 
-
 body {
-	min-width: 960px;
-	margin: 0px;
-	padding: 0;
+	min-width: 960px;  /*минимальный скрол*/
+	margin: 0px; /*отступы от экрана*/
+	padding: 0; /*отступы от экрана*/
 	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 15px;
-	line-height: 28px;
-	font-weight: 300;
-	color: var(--basic-black);
-	text-transform:var(--basic-black);
+	line-height: 30px;
+	font-weight: 200;
+	color: #000000;
 	background-color: var(--basic-black);
 	/*background-image: url("img/bg.jpg");*/
-	background-position: top center;
+	background-position: #ff0000;
 	background-repeat: no-repeat;
 
 }
@@ -66,32 +66,31 @@ a {
 
 .services {
 
-
-
 }
-
-
 
 .services_item {
-
-
-
 }
 
 
 
 
 
+/*Button---------------------------------------------------------*/
 
-
-/*Button*/
 .button {
-font: inherit
+font: Gilroy
+
 text-align: center;
-color: var(--basic-white);
+
+font-family: "Gilroy", Arial, sans-serif;
+font-size: 18px;
+line-height: 30px;
+font-weight: 800;
+
+color: #999999;
 vertical-align: middle;
 text-transform: uppercase;
-background-color: var(--basic-black);
+background-color: #ffffff;
 border: none;
 }
 
@@ -103,7 +102,6 @@ border: none;
 
 }
 
-
 .logo-header-color {
 	fill: #e22121;
 }
@@ -112,27 +110,11 @@ border: none;
 	fill: #F0C52E;
 }
 
-
-
 .text {
 	font-size: 15px;
 	line-height: 64px;
 
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
 
 
 * {box-sizing: border-box;}
@@ -174,15 +156,10 @@ button:before{
   color: #324b4e;
 }
 
-
-
-
 .logo_htmlacademy {
 
 
-
 }
-
 
 
 /* Стиль списка */
@@ -192,10 +169,4 @@ ul.breadcrumb {
 	background-color: #eee;
  }
 
-/* Добавить символ косой черты (/) перед/за каждым элементом списка */
-ul.breadcrumb li+li:before {
-	padding: 8px;
-	color: black;
-	content: "/\00a0";
- }
 
