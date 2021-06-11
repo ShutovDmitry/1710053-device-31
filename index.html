@@ -30,23 +30,23 @@
 				<input class="light" type="text" placeholder="Поиск по сайту">
 				<button type="submit"></button>
 			</form>
-			<a class="header-item" href="#">Войти</a>
-			<a class="header-item" href="#">Сравнить</a>
-			<a class="header-item" href="#">Корзина</a>
+			<a class="user-navigation" href="#">Войти</a>
+			<a class="header-link comparison" href="#">Сравнить</a>
+			<a class="header-link product-box" href="#">Корзина</a>
 
 
-        <ul class="site-navigation">
+        <ul class="main-navigation">
           <li>
-          	<a class="site-navigation-item" href="catalog.html">Каталог товаров</a>
+          	<a class="main-navigation-item" href="catalog.html">Каталог товаров</a>
           </li>
           <li>
-            <a class="site-navigation-item" href="#">Доставка</a>
+            <a class="main-navigation-item" href="#">Доставка</a>
           </li>
           <li>
-            <a class="site-navigation-item" href="#">Гарантии</a>
+            <a class="main-navigation-item" href="#">Гарантии</a>
           </li>
           <li>
-            <a class="site-navigation-item" href="#">Контакты</a>
+            <a class="main-navigation-item" href="#">Контакты</a>
           </li>
         </ul>
       </section>
@@ -83,7 +83,7 @@
 				alt=""
 			>
 
-        <p>Пархает как бабочка, жалит как пчела!</p>
+        <p class="lead" >Пархает как бабочка, жалит как пчела!</p>
         <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 
         <button class="button" type="button">Подробнее</button>
@@ -92,16 +92,17 @@
           <img src="img/slider-button-empty.svg" width="12" height="12" alt="">
           <img src="img/slider-button.svg" width="12" height="12" alt="">
 
-        <ul>
+        <ul class= "characteristic">
           <li>
-            <p>Дальность полёта</p>
-            <p>800 м<p>
+				<p class="characteristic-value">800 м<p>
+            <p class="characteristic-name">Дальность полёта</p>
+
+          </li>
+          <li>
+				<p class="characteristic-value">50 м<p>
+            <p class="characteristic-name">Радиус поражения</p>
           </li>
 
-          <li>
-            <p>Радиус поражения</p>
-            <p>50 м</p>
-          </li>
         </ul>
 
       </section>
@@ -109,10 +110,9 @@
 
 
     <main>
-      <h1>Магазин гаджетов «Device»</h1>
+      <h1 style='display: none;' class='page-title entry-title'>Магазин гаджетов «Device»</h1>
 
       <section>
-        <h2>Группы товаров</h2>
 
         <ul class= "popular">
           <li>
@@ -152,23 +152,22 @@
       </section>
 
       <section>
-        <h2>Доставка</h2>
 
         <ul class="services">
           <li>
-            <a class="services_item" href="#">Доставка</a>
+            <a class="services_item services_item-color" href="#">Доставка</a>
           </li>
           <li>
-            <a class="button" href="#">Гарантия</a>
+            <a class="services_item" href="#">Гарантия</a>
           </li>
           <li>
-            <a class="button" href="#">Кредит</a>
+            <a class="services_item" href="#">Кредит</a>
           </li>
         </ul>
 
         <section>
          <h3>Доставка</h3>
-         <p> Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+         <p class="services-text"> Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             <!--бегущий человек-->
         </section>
 
@@ -204,8 +203,7 @@
         <p> Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p> Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
 
-        <ul class="Group4">
-          <h3>Group4</h3>
+        <ul class="group4">
 				<li class="group4-item">
          		<p>Деловые линии</p>
 				</li>
@@ -223,7 +221,7 @@
 
       <section>
         <h2>Контакты<h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <p class="text"> Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <p>
           <a class = "map"
 				href="#"><img src="img/map_1.png"
@@ -253,46 +251,43 @@
 
       <ul class="socials">
 
-        <li class="socials-item">
-          <a href="https://web.facebook.com/">Facebook</a>
+        <li>
+			<a class="socials-item" href="https://web.facebook.com/">facebook</a>
         </li>
 
-        <li class="socials-item">
-          <a class="socials-item" href="https://www.instagram.com/">Instagram</a>
+        <li>
+          <a class="socials-item" href="https://www.instagram.com/">instagram</a>
         </li>
 
-        <li class="socials-item">
+        <li>
           <a class="socials-item" href="https://twitter.com/">twitter</a>
         </li>
 
       </ul>
 
-      <h2>Меню_footer</h2>
 
-		<ul class="site-navigation, site-navigation-white">
+		<ul class="main-navigation main-navigation-color">
+
 			<li>
-				<a class="site-navigation-item" href="catalog.html">Каталог товаров</a>
+				<a class="main-navigation-item" href="#">Доставка</a>
 			</li>
 			<li>
-			  <a class="site-navigation-item" href="#">Доставка</a>
+				<a class="main-navigation-item" href="#">Гарантии</a>
 			</li>
 			<li>
-			  <a class="site-navigation-item" href="#">Гарантии</a>
-			</li>
-			<li>
-			  <a class="site-navigation-item" href="#">Контакты</a>
+				<a class="main-navigation-item" href="#">Контакты</a>
 			</li>
 		</ul>
 
       <section>
-        <a class="footer-item" href="#">Войти</a>
-        <a class="footer-item" href="#">Сравнить</a>
-        <a class="footer-item" href="#">Корзина</a>
+			<a class="footer-item" href="#">Войти</a>
+			<a class="footer-item" href="#">Сравнить</a>
+			<a class="footer-item" href="#">Корзина</a>
       </section>
 
       <p>
-        Тел:
-        <a class="tel-link" href="tel: +78005558628">+7 800 555-86-28</a>
+			Тел:
+			<a class="tel-link" href="tel: +78005558628">+7 800 555-86-28</a>
       </p>
 
       <a

@@ -15,19 +15,44 @@
 	/*  --white-60: #ffffff;  Прозрачный цвет 60%*/
 }
 
+
+@font-face {
+	font-family: "Gilroy";	/* Браузер сначала попробует найти шрифт локально */
+	font-style: extrabold;
+	font-weight: 800;
+	src: local("Gilroy"),
+	url("/fonts/gilroyextrabold.woff2") format("woff2"),/* Если не получилось, загрузит woff2 */
+	url("/fonts/gilroyextrabold.woff") format("woff");/* Если браузер не поддерживает woff2, загрузит woff */
+ }
+@font-face {
+	font-family: "Gilroy";	/* Браузер сначала попробует найти шрифт локально */
+	font-style: light;
+	font-weight: 300;
+	src: local("Gilroy"),
+	url("/fonts/gilroylight.woff2") format("woff2"),/* Если не получилось, загрузит woff2 */
+	url("/fonts/gilroylight.woff") format("woff");/* Если браузер не поддерживает woff2, загрузит woff */
+ }
+ @font-face {
+	font-family: "Open Sans";	/* Браузер сначала попробует найти шрифт локально */
+	font-style: normal;
+	font-weight: 500;
+	src: local("Gilroy"),
+	url("/fonts/opensans.woff2") format("woff2"),/* Если не получилось, загрузит woff2 */
+	url("/fonts/opensans.woff") format("woff");/* Если браузер не поддерживает woff2, загрузит woff */
+ }
+@font-face {
+	font-family: "Open Sans";	/* Браузер сначала попробует найти шрифт локально */
+	font-style: light;
+	font-weight: 300;
+	src: local("Gilroy"),
+	url("/fonts/opensanslight.woff2") format("woff2"),/* Если не получилось, загрузит woff2 */
+	url("/fonts/opensanslight.woff") format("woff");/* Если браузер не поддерживает woff2, загрузит woff */
+ }
+
+
 /*Global*/
 
-h1 {
-
-}
-
-h2 {
-	font-family: "Gilroy", Arial, sans-serif;
-	font-size: 47px;
-	line-height: 100%;
-}
-
-body {
+.page-body {
 	min-width: 960px;  /*минимальный скрол*/
 	margin: 0px; /*отступы от экрана*/
 	padding: 0; /*отступы от экрана*/
@@ -35,58 +60,317 @@ body {
 	font-size: 15px;
 	line-height: 30px;
 	font-weight: 200;
-	color: #000000;
-	background-color: var(--basic-black);
-	/*background-image: url("img/bg.jpg");*/
-	background-position: #ff0000;
-	background-repeat: no-repeat;
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+	list-style: none;
+}
+
+.page-title entry-title {
+
 
 }
 
 a {
-	text-decoration: none;
+	text-decoration: none;  /*подчеркивание у ссылок*/
+}
+
+.text {
+	min-width: 960px;  /*минимальный скрол*/
+	margin: 0px; /*отступы от экрана*/
+	padding: 0; /*отступы от экрана*/
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 28px;
+	font-weight: lighter;
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+}
+
+.group4 {
+	text-align: left;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 100%;
+	letter-spacing: 0%
+	font-weight: lighter;
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 /*Main navigation*/
 
 .main-navigation {
-	font-size: 16px;
-	line-height: 20px;
-	color: var(--basic-black);
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	letter-spacing: 0%;
+	font-size: 15px;
+	line-height: 30px;
+	color: #990236;
+	background-color: transparent;
+	text-transform: uppercase;
+	list-style: none;
+	text-align: left;
+
+}
+
+.main-navigation-color {
+	color: --special-yellow-dark;
 	background-color: transparent;
 }
 
-.main-navigation-wraper {
-	background-color: var(--basic-black);
+
+.main-navigation-item {
+
+
 }
+
+.catalog-list {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: feSpotLight;
+	letter-spacing: 0%;
+	font-size: 15px;
+	line-height: 20px;
+	color: var(--basic-black);
+	background-color: transparent;
+	text-transform: uppercase;
+	text-align: left;
+	list-style: none
+}
+
+.catalog-menu {
+	font: Gilroy;
+	text-align: left;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: feSpotLight;
+	letter-spacing: 0%;
+	color: var(--basic-black);
+	background-color: transparent;
+}	list-style: none
+
 
 .site-navigation {
 	list-style: none;
 }
 
+.site-navigation-current a:not([href]) {
+background-color: var(--basic-black);
+}
+
+
+
+/*User navigation----------------------------------------------------*/
+
+.site-navigation a,
+.user-navigation a {
+	color: var(--basic-black)
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+	background-color: var(--basic-grey-light);
+}
+
+
+.header-item {
+	text-align: left;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	font-weight: lighter;
+}
+
+
+/*Slide_1----------------------------------------------------*/
+.lead {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 57,58;
+	letter-spacing: 0%;
+	font-weight: 800;
+	font: Gilroy;
+	text-align: left;
+	color: var(--basic-black);
+	background-color: transparent;
+
+}
+
+
+/*main----------------------------------------------------*/
+
+.main h2 {
+	text-align: left;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 100%;
+	letter-spacing: 0%;
+}
+
+.main-list {
+/* list-style:none;*/
+}
+
+.main-item {
+	text-align: center;
+	}
+
+
+	.characteristic {
+		list-style: none;
+
+	}
+
+
+	.characteristic-value {
+		text-align: left;
+		font-family: "Gilroy", Arial, sans-serif;
+		font-size: 36px;
+		line-height: 100%;
+		font-weight: lighter;
+		letter-spacing: 10%;
+
+	}
+
+	.characteristic-name {
+		text-align: left;
+		font-family: "Gilroy", Arial, sans-serif;
+		font-size: 13px;
+		line-height: 100%;
+		font-weight: lighter;
+		letter-spacing: 10%;
+
+	}
+
+
+
+
+
+.main-info h2 {
+	text-align: left;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 100%;
+	font-weight: bolder; /*extrabold*/
+	}
+
+	.main-info-groop4 {
+		text-align: left;
+		font-family: "Gilroy", Arial, sans-serif;
+		font-size: 16px;
+		line-height: 28;
+		font-weight: bolder; /*extrabold*/
+		}
+
+	.main-info-text {
+		text-align: left;
+		font-family: "Gilroy", Arial, sans-serif;
+		font-size: 15px;
+		line-height: 28;
+
+		}
+
+.main-contact h2 {
+	text-align: left;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 100%;
+
+	}
+
 .services {
+	font: Gilroy;
+	text-align: center;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 800;
+	letter-spacing: 20%;
+	color: var(--basic-black);
+	background-color: transparent;
+	list-style: none;
+	text-transform: uppercase;
+}
+
+	.services_item {
+		font: Gilroy;
+		text-align: center;
+		font-family: "Gilroy", Arial, sans-serif;
+		font-size: 18px;
+		line-height: 18px;
+		font-weight: 800;
+		letter-spacing: 20%;
+		color: var(--basic-black);
+		background-color: transparent;
+		list-style: none;
+		text-transform: uppercase;
+	}
+
+	.services_item-color {
+
+
+
+
+
+
+
+
+
+		color: var(--special-yellow);
+		background-color: var(--basic-white);
+
+	}
+
+	.services-text {
+		font-family: "Open Sans", Arial, sans-serif;
+		font-weight: 300;
+		letter-spacing: 10%;
+		font-size: 15px;
+		line-height: 30px;
+		color: var(--basic-black);
+		background-color: transparent;
+		text-align: left;
+	}
+
+
+.popular {
+	font: Gilroy;
+	text-align: center;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 22.05px;
+	font-weight: 800;
+	letter-spacing: 5%;
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+	list-style: none;
 
 }
 
-.services_item {
+.socials {
+
+	list-style: none;
+
 }
-
-
 
 
 
 /*Button---------------------------------------------------------*/
 
 .button {
-font: Gilroy
-
+font: Gilroy;
 text-align: center;
-
 font-family: "Gilroy", Arial, sans-serif;
 font-size: 18px;
 line-height: 30px;
-font-weight: 800;
-
+font-weight: bolder;
 color: #999999;
 vertical-align: middle;
 text-transform: uppercase;
@@ -94,8 +378,25 @@ background-color: #ffffff;
 border: none;
 }
 
-.button:hover,
+.button {
+  width: 42px;
+  height: 42px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
 
+.button:before{
+  content: "\f002";
+  font-family: FontAwesome;
+  color: #324b4e;
+
+}
+
+
+.button:hover{
 }
 
 .logo {
@@ -128,7 +429,7 @@ input {
   width: 250px;
   height: 42px;
   padding-left: 15px;
-  border-radius: 42px;
+
   border: 2px solid #324b4e;
   background: #F9F0DA;
   outline: none;
@@ -140,25 +441,9 @@ input:focus {
   width: 300px;
 }
 
-button {
-  width: 42px;
-  height: 42px;
-  background: none;
-  border: none;
-  position: absolute;
-  top: -2px;
-  right: 0;
-}
 
-button:before{
-  content: "\f002";
-  font-family: FontAwesome;
-  color: #324b4e;
-}
 
 .logo_htmlacademy {
-
-
 }
 
 
@@ -168,5 +453,4 @@ ul.breadcrumb {
 	list-style: none;
 	background-color: #eee;
  }
-
 
