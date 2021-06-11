@@ -18,7 +18,7 @@
 
 @font-face {
 	font-family: "Gilroy";	/* Браузер сначала попробует найти шрифт локально */
-	font-style: extrabold;
+	/* font-style:*/
 	font-weight: 800;
 	src: local("Gilroy"),
 	url("/fonts/gilroyextrabold.woff2") format("woff2"),/* Если не получилось, загрузит woff2 */
@@ -26,7 +26,7 @@
  }
 @font-face {
 	font-family: "Gilroy";	/* Браузер сначала попробует найти шрифт локально */
-	font-style: light;
+	/* font-style:*/
 	font-weight: 300;
 	src: local("Gilroy"),
 	url("/fonts/gilroylight.woff2") format("woff2"),/* Если не получилось, загрузит woff2 */
@@ -34,17 +34,17 @@
  }
  @font-face {
 	font-family: "Open Sans";	/* Браузер сначала попробует найти шрифт локально */
-	font-style: normal;
+	/* font-style:*/
 	font-weight: 500;
-	src: local("Gilroy"),
+	src: local("Open Sans"),
 	url("/fonts/opensans.woff2") format("woff2"),/* Если не получилось, загрузит woff2 */
 	url("/fonts/opensans.woff") format("woff");/* Если браузер не поддерживает woff2, загрузит woff */
  }
 @font-face {
 	font-family: "Open Sans";	/* Браузер сначала попробует найти шрифт локально */
-	font-style: light;
+	/* font-style:*/
 	font-weight: 300;
-	src: local("Gilroy"),
+	src: local("GOpen Sans"),
 	url("/fonts/opensanslight.woff2") format("woff2"),/* Если не получилось, загрузит woff2 */
 	url("/fonts/opensanslight.woff") format("woff");/* Если браузер не поддерживает woff2, загрузит woff */
  }
@@ -62,7 +62,7 @@
 	font-weight: 200;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
-	list-style: none;
+
 }
 
 .page-title entry-title {
@@ -75,13 +75,12 @@ a {
 }
 
 .text {
-	min-width: 960px;  /*минимальный скрол*/
 	margin: 0px; /*отступы от экрана*/
 	padding: 0; /*отступы от экрана*/
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 28px;
-	font-weight: lighter;
+	font-weight: 300;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
 }
@@ -91,7 +90,7 @@ a {
 	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 100%;
-	letter-spacing: 0%
+	letter-spacing: 0%;
 	font-weight: lighter;
 	list-style: none;
 }
@@ -118,7 +117,7 @@ img {
 }
 
 .main-navigation-color {
-	color: --special-yellow-dark;
+	color: --basic-white;
 	background-color: transparent;
 }
 
@@ -128,17 +127,23 @@ img {
 
 }
 
+
+.logotypes {
+	list-style: none;
+
+}
+
+
 .catalog-list {
 	font-family: "Open Sans", Arial, sans-serif;
-	font-weight: feSpotLight;
+	font-weight: 300;
 	letter-spacing: 0%;
 	font-size: 15px;
-	line-height: 20px;
+	line-height: 20,43px;
 	color: var(--basic-black);
 	background-color: transparent;
-	text-transform: uppercase;
 	text-align: left;
-	list-style: none
+	list-style: none;
 }
 
 .catalog-menu {
@@ -151,7 +156,7 @@ img {
 	letter-spacing: 0%;
 	color: var(--basic-black);
 	background-color: transparent;
-}	list-style: none
+}	list-style: none;
 
 
 .site-navigation {
@@ -168,7 +173,7 @@ background-color: var(--basic-black);
 
 .site-navigation a,
 .user-navigation a {
-	color: var(--basic-black)
+	color: var(--basic-black);
 }
 
 .site-navigation a:hover,
@@ -206,12 +211,27 @@ background-color: var(--basic-black);
 
 /*main----------------------------------------------------*/
 
-.main h2 {
-	text-align: left;
+.main-h2 {
 	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	letter-spacing: 20%;
 	font-size: 47px;
-	line-height: 100%;
-	letter-spacing: 0%;
+	line-height: 57.58px;
+	color: var(--basic-black);
+	background-color: transparent;
+	text-align: left;
+	list-style: none;
+}
+
+.main-h3 {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	letter-spacing: 10%;
+	font-size: 16px;
+	line-height: 19.6px;
+	color: var(--basic-black);
+	background-color: transparent;
+	text-align: left;
 }
 
 .main-list {
@@ -314,18 +334,8 @@ background-color: var(--basic-black);
 	}
 
 	.services_item-color {
-
-
-
-
-
-
-
-
-
 		color: var(--special-yellow);
 		background-color: var(--basic-white);
-
 	}
 
 	.services-text {
@@ -339,10 +349,9 @@ background-color: var(--basic-black);
 		text-align: left;
 	}
 
-
 .popular {
 	font: Gilroy;
-	text-align: center;
+
 	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 22.05px;
@@ -351,100 +360,64 @@ background-color: var(--basic-black);
 	color: var(--basic-black);
 	background-color: var(--basic-white);
 	list-style: none;
-
 }
 
 .socials {
-
 	list-style: none;
-
 }
 
+.filter-ul {
+	list-style: none;
 
+
+	
+}
 
 /*Button---------------------------------------------------------*/
-
 .button {
 font: Gilroy;
 text-align: center;
 font-family: "Gilroy", Arial, sans-serif;
 font-size: 18px;
-line-height: 30px;
-font-weight: bolder;
-color: #999999;
+line-height: 22.05px;
+letter-spacing: 20%;
+font-weight: 800;
+color: var(--basic-black);
 vertical-align: middle;
 text-transform: uppercase;
-background-color: #ffffff;
+background-color: var(--basic-white);
 border: none;
 }
 
-.button {
-  width: 42px;
-  height: 42px;
-  background: none;
-  border: none;
-  position: absolute;
-  top: -2px;
-  right: 0;
-}
-
-.button:before{
-  content: "\f002";
-  font-family: FontAwesome;
-  color: #324b4e;
-
-}
-
-
-.button:hover{
-}
-
 .logo {
-
 }
-
-.logo-header-color {
-	fill: #e22121;
-}
-
-.logo-footer-color {
-	fill: #F0C52E;
-}
-
-.text {
-	font-size: 15px;
-	line-height: 64px;
-
-}
-
-
-* {box-sizing: border-box;}
-form {
-  width: auto;
-  float: right;
-  margin-right: 30px;
-}
-
-input {
-  width: 250px;
-  height: 42px;
-  padding-left: 15px;
-
-  border: 2px solid #324b4e;
-  background: #F9F0DA;
-  outline: none;
-  position: relative;
-  transition: .3s linear;
-}
-
-input:focus {
-  width: 300px;
-}
-
-
 
 .logo_htmlacademy {
 }
+
+* {box-sizing: border-box;}
+form {
+	width: auto;
+	float: left;
+	margin-right: 30px;
+}
+
+input {
+	width: 250px;
+	height: 42px;
+	padding-left: 15px;
+
+	border: 2px solid #324b4e;
+	background: #F9F0DA;
+	outline: none;
+	position: relative;
+	transition: .3s linear;
+}
+
+.index-submenu {
+}
+
+
 
 
 /* Стиль списка */
