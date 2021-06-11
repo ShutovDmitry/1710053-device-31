@@ -108,25 +108,30 @@ img {
 	letter-spacing: 0%;
 	font-size: 15px;
 	line-height: 30px;
-	color: #990236;
+	color: var(--basic-black);
 	background-color: transparent;
 	text-transform: uppercase;
 	list-style: none;
 	text-align: left;
-
 }
 
-.main-navigation-color {
-	color: --basic-white;
+
+.main-navigation-link {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	letter-spacing: 0%;
+	font-size: 15px;
+	line-height: 30px;
+	color: var(--basic-black);
 	background-color: transparent;
+	text-transform: uppercase;
+	list-style: none;
+	text-align: left;
 }
 
-
-.main-navigation-item {
-
-
+.main-navigation-link-color {
+	color: var(--basic-white);
 }
-
 
 .logotypes {
 	list-style: none;
@@ -134,7 +139,7 @@ img {
 }
 
 
-.catalog-list {
+.catalog-menu {
 	font-family: "Open Sans", Arial, sans-serif;
 	font-weight: 300;
 	letter-spacing: 0%;
@@ -146,21 +151,49 @@ img {
 	list-style: none;
 }
 
-.catalog-menu {
+.catalog {
+
+	list-style: none;
+}
+
+
+.catalog-link {
+	font: Gilroy;
+	text-align: left;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 20,43px;
+	font-weight: 300;
+	letter-spacing: 5%;
+	color: var(--basic-black);
+	background-color: transparent;
+}
+
+
+.price{
 	font: Gilroy;
 	text-align: left;
 	font-family: "Gilroy", Arial, sans-serif;
-	font-size: 15px;
-	line-height: 20px;
-	font-weight: feSpotLight;
-	letter-spacing: 0%;
+	font-size: 16px;
+	line-height: 18,45px;
+	font-weight: 300;
+	letter-spacing: 5%;
 	color: var(--basic-black);
 	background-color: transparent;
-}	list-style: none;
+}
 
 
 .site-navigation {
 	list-style: none;
+	font: Gilroy;
+	text-align: left;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 20,43px;
+	font-weight: 300;
+	letter-spacing: 0%;
+	color: var(--basic-black);
+	background-color: transparent;
 }
 
 .site-navigation-current a:not([href]) {
@@ -174,7 +207,17 @@ background-color: var(--basic-black);
 .site-navigation a,
 .user-navigation a {
 	color: var(--basic-black);
+
+
+
 }
+
+
+
+
+
+
+
 
 .site-navigation a:hover,
 .site-navigation a:focus,
@@ -182,6 +225,12 @@ background-color: var(--basic-black);
 .user-navigation a:focus {
 	background-color: var(--basic-grey-light);
 }
+
+.menu2-color {
+	color: var(--basic-white);
+	opacity: 0.7;
+}
+
 
 
 .header-item {
@@ -211,7 +260,7 @@ background-color: var(--basic-black);
 
 /*main----------------------------------------------------*/
 
-.main-h2 {
+.main, h2 {
 	font-family: "Gilroy", Arial, sans-serif;
 	font-weight: 800;
 	letter-spacing: 20%;
@@ -242,12 +291,10 @@ background-color: var(--basic-black);
 	text-align: center;
 	}
 
-
 	.characteristic {
 		list-style: none;
 
 	}
-
 
 	.characteristic-value {
 		text-align: left;
@@ -268,10 +315,6 @@ background-color: var(--basic-black);
 		letter-spacing: 10%;
 
 	}
-
-
-
-
 
 .main-info h2 {
 	text-align: left;
@@ -350,17 +393,21 @@ background-color: var(--basic-black);
 	}
 
 .popular {
-	font: Gilroy;
+	list-style: none;
+}
 
+.popular_link {
+	font: Gilroy;
 	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 22.05px;
 	font-weight: 800;
 	letter-spacing: 5%;
 	color: var(--basic-black);
-	background-color: var(--basic-white);
+	background-color: transparent;
 	list-style: none;
 }
+
 
 .socials {
 	list-style: none;
@@ -370,14 +417,126 @@ background-color: var(--basic-black);
 	list-style: none;
 
 
-	
+
+}
+.navigation-list {
+	font: Gilroy;
+	text-align: left;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 19.6px;
+	letter-spacing: 10%;
+	font-weight: 800;
+	color: var(--basic-black);
+	vertical-align: middle;
+	text-transform: uppercase;
+	background-color: var(--basic-white);
+	list-style: none;
+}
+
+.navigation-item {
+	font: Gilroy;
+	text-align: left;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 19.6px;
+	letter-spacing: 10%;
+	font-weight: 800;
+	color: var(--basic-black);
+	vertical-align: middle;
+	text-transform: uppercase;
+	background-color: var(--basic-white);
+}
+
+.sort {
+	font: Gilroy;
+	text-align: left;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 19.7px;
+	letter-spacing: 0%;
+	font-weight: 400;
+	color: var(--basic-black);
+	vertical-align: middle;
+	background-color: var(--basic-white);
+	list-style: none;
+	border: none;
+}
+
+.sort2 {
+	font: Gilroy;
+	text-align: left;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 19.7px;
+	letter-spacing: 0%;
+	font-weight: 400;
+	color: var(--basic-black);
+	vertical-align: middle;
+	background-color: transparent;
+	list-style: none;
+	border: none;
+}
+
+.sort-30 {
+	opacity: 0.3;
+}
+
+.add_comparison {
+	font: Open Sans;
+	text-align: left;
+	font-family: "Open Sans", arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: 10%;
+	font-weight: 300;
+	color: var(--basic-black);
+	vertical-align: middle;
+	background-color: transparent;
+	border: none;
+}
+
+.filter-fieldset {
+
+}
+
+
+.filter-bluetooth {
+	font: Open Sans;
+	text-align: left;
+	font-family: "Open Sans", arial, sans-serif;
+	font-size: 14px;
+	line-height: 19px;
+	letter-spacing: 0%;
+	font-weight: 300;
+	color: var(--basic-black);
+	background-color: transparent;
+	vertical-align: middle;
+	list-style: none;
+}
+
+.nav {
+	list-style: none;
+}
+
+.nav-link {
+	font: Open Sans;
+	text-align: left;
+	font-family: "Open Sans", arial, sans-serif;
+	font-size: 14px;
+	line-height: 19,07px;
+	letter-spacing: 0%;
+	font-weight: 300;
+	color: var(--basic-black);
+	background-color: transparent;
+	vertical-align: middle;
 }
 
 /*Button---------------------------------------------------------*/
 .button {
 font: Gilroy;
 text-align: center;
-font-family: "Gilroy", Arial, sans-serif;
+font-family: "Gilroy", arial, sans-serif;
 font-size: 18px;
 line-height: 22.05px;
 letter-spacing: 20%;
@@ -385,7 +544,7 @@ font-weight: 800;
 color: var(--basic-black);
 vertical-align: middle;
 text-transform: uppercase;
-background-color: var(--basic-white);
+background-color: transparent;
 border: none;
 }
 
