@@ -56,18 +56,16 @@
 .page-body {
 	min-width: 960px;  /*минимальный скрол*/
 	margin: 0px; /*отступы от экрана*/
-	padding: 0; /*отступы от экрана*/
+	padding: 0px; /*отступы от экрана*/
 	font-family: Gilroy, Arial, sans-serif;
 	font-size: 15px;
 	line-height: 30px;
-	font-weight: 200;
+	font-weight: 200px;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
-
 }
 
 .page-title entry-title {
-
 
 }
 
@@ -84,17 +82,6 @@ a {
 	font-weight: 300;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
-}
-
-.group4 {
-	font: Gilroy;
-	text-align: left;
-	font-family: Gilroy, Arial, sans-serif;
-	font-size: 15px;
-	line-height: 100%;
-	letter-spacing: 0%;
-	font-weight: lighter;
-	list-style: none;
 }
 
 img {
@@ -154,9 +141,6 @@ img {
 	list-style: none;
 }
 
-
-
-
 .catalog_menu-link {
 	font: Gilroy;
 	text-align: left;
@@ -168,7 +152,6 @@ img {
 	color: var(--basic-black);
 	background-color: transparent;
 }
-
 
 .catalog-item {
 	font: Gilroy;
@@ -199,7 +182,6 @@ img {
 	background-color: transparent;
 }
 
-
 .site-navigation {
 	list-style: none;
 	font: Gilroy;
@@ -217,15 +199,12 @@ img {
 background-color: var(--basic-black);
 }
 
-
-
 /*User navigation----------------------------------------------------*/
 
 .site-navigation a,
 .user-navigation a {
 	color: var(--basic-black);
 }
-
 
 .site-navigation a:hover, .site-navigation a:focus, .user-navigation a:hover, .user-navigation a:focus {
 	background-color: var(--basic-grey-light);
@@ -245,7 +224,6 @@ background-color: var(--basic-black);
 	font-weight: lighter;
 	text-align: left;
 }
-
 
 /*Slide_1----------------------------------------------------*/
 .lead {
@@ -313,50 +291,52 @@ background-color: var(--basic-black);
 	}
 
 	.characteristic-name {
-		text-align: left;
+		font: Gilroy;
 		font-family: "Gilroy", Arial, sans-serif;
 		font-size: 13px;
 		line-height: 100%;
 		font-weight: lighter;
 		letter-spacing: 10%;
+		text-align: left;
 	}
 
-.main-info h2 {
+.info h2 {
 	font: Gilroy;
-	text-align: left;
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: Gilroy, Arial, sans-serif;
 	font-size: 47px;
 	line-height: 100%;
 	font-weight: 800;
+	text-align: left;
 	}
 
-	.main-info-groop4 {
+	.group4 {
 		font: Gilroy;
-		font-family: "Gilroy", Arial, sans-serif;
+		font-family: Gilroy, Arial, sans-serif;
+		color: var(--basic-black);
+		background-color: transparent;
 		font-size: 16px;
-		line-height: 28;
+		line-height: 100%;
 		font-weight: 800;
 		text-align: left;
+		list-style: none;
 		}
 
-	.main-info-text {
-		font-family: "Gilroy", Arial, sans-serif;
+	.info_text {
+		font: "Open Sans";
+		font-family: "Open Sans", Arial, sans-serif;
 		font-size: 15px;
 		line-height: 28;
+		letter-spacing: 0%;
+		font-weight: 300;
+		font: Gilroy;
 		text-align: left;
+		color: var(--basic-black);
+		background-color: transparent;
 		}
-
-.main-contact h2 {
-	font: Gilroy;
-	text-align: left;
-	font-family: "Gilroy", Arial, sans-serif;
-	font-size: 47px;
-	line-height: 100%;
-	}
 
 .services {
 	font: Gilroy;
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: Gilroy, Arial, sans-serif;
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: 800;
@@ -371,7 +351,7 @@ background-color: var(--basic-black);
 	.services_item {
 		font: Gilroy;
 		text-align: center;
-		font-family: "Gilroy", Arial, sans-serif;
+		font-family: Gilroy, Arial, sans-serif;
 		font-size: 18px;
 		line-height: 18px;
 		font-weight: 800;
