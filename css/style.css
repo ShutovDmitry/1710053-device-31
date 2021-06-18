@@ -143,7 +143,6 @@ img {
 
 .catalog_menu-link {
 	font: Gilroy;
-	text-align: left;
 	font-family: Gilroy, Arial, sans-serif;
 	font-size: 15px;
 	line-height: 20,43px;
@@ -151,6 +150,7 @@ img {
 	letter-spacing: 5%;
 	color: var(--basic-black);
 	background-color: transparent;
+	text-align: left;
 }
 
 .catalog-item {
@@ -307,7 +307,7 @@ background-color: var(--basic-black);
 	line-height: 100%;
 	font-weight: 800;
 	text-align: left;
-	}
+}
 
 	.group4 {
 		font: Gilroy;
@@ -319,20 +319,19 @@ background-color: var(--basic-black);
 		font-weight: 800;
 		text-align: left;
 		list-style: none;
-		}
+	}
 
 	.info_text {
 		font: "Open Sans";
 		font-family: "Open Sans", Arial, sans-serif;
+		color: var(--basic-black);
+		background-color: transparent;
 		font-size: 15px;
 		line-height: 28;
 		letter-spacing: 0%;
 		font-weight: 300;
-		font: Gilroy;
 		text-align: left;
-		color: var(--basic-black);
-		background-color: transparent;
-		}
+	}
 
 .services {
 	font: Gilroy;
@@ -436,7 +435,7 @@ background-color: var(--basic-black);
 .sort {
 	font: Gilroy;
 	text-align: left;
-	font-family: "Open Sans", Arial, sans-serif;
+	font-family: Gilroy, Arial, sans-serif;
 	font-size: 14px;
 	line-height: 19.7px;
 	letter-spacing: 0%;
@@ -470,6 +469,20 @@ background-color: var(--basic-black);
 
 }
 
+.filter {
+	font: Gilroy;
+	text-align: left;
+	font-family: Gilroy, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 19.7px;
+	letter-spacing: 0%;
+	font-weight: 400;
+	color: var(--basic-black);
+	vertical-align: middle;
+	background-color: transparent;
+	list-style: none;
+	border: none;
+}
 
 .filter-bluetooth {
 	font: Open Sans;
@@ -530,7 +543,7 @@ color: var(--basic-black);
 }
 
 * {box-sizing: border-box;}
-form {
+form {`
 	width: auto;
 	float: left;
 	margin-right: 30px;

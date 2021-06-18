@@ -47,29 +47,32 @@
 				</ul>
 			</section>
 
-		<ul class="catalog-menu">
+		<ul class="catalog_menu">
 			<li>
-				<a class="catalog-link" href="#">Виртуальная реальность</a>
+				<a class="catalog_menu-link" href="#">Виртуальная реальность</a>
 			</li>
 			<li>
-				<a class="catalog-link" href="#">Фитнес-браслеты</a>
+				<a class="catalog_menu-link" href="#">Фитнес-браслеты</a>
 			</li>
 			<li>
-				<a class="catalog-link" href="#">Квадрокоптер</a>
+				<a class="catalog_menu-link" href="#">Квадрокоптер</a>
 			</li>
 			<li>
-				<a class="catalog-link" href="#">Моноподы для селфи</a>
+				<a class="catalog_menu-link" href="#">Моноподы для селфи</a>
 			</li>
 			<li>
-				<a class="catalog-link" href="#">Умные часы</a>
+				<a class="catalog_menu-link" href="#">Умные часы</a>
 			</li>
 			<li>
-				<a class="catalog-link" href="#">Экшн-камеры</a>
+				<a class="catalog_menu-link" href="#">Экшн-камеры</a>
 			</li>
 		</ul>
 
 		<!--СЛАЙДЕР 1--------------------------------------------------------------------------------------------------------->
-			<section>
+			<div class="button slide-button">
+				<h3 class="slide-title">
+					Наимнование слайда
+				</h3>
 				<!--картинка 03-->
 				<img
 					class="quadcopter_1"
@@ -78,7 +81,7 @@
 					height="334"
 					alt=""
 				>
-				<p class="lead" >Пархает как бабочка, жалит как пчела!</p>
+				<p class="lead">Пархает как бабочка, жалит как пчела!</p>
 				<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 
 				<p><a class="button" href="#">Подробнее</a></p>
@@ -227,10 +230,12 @@
 				<a
 					class = "map"
 					href="#">
-					<img src="img/map_1.png"
-					width="560"
-					height="222"
-					alt="Карта Местоположение магазина Device">
+					<img
+						src="img/map_1.png"
+						width="560"
+						height="222"
+						alt="Карта Местоположение магазина Device"
+					>
 				</a>
 				<p><a class="button" href="#">Напишите нам</a></p>
 			</section>
@@ -242,10 +247,12 @@
 			<a
 				class="logo, logo-footer-color"
 				href="index.html">
-				<img src="img/logo1.svg"
-				width="163"
-				height="35"
-				alt="Логотип магазина гаджетов Device">
+				<img
+					src="img/logo1.svg"
+					width="163"
+					height="35"
+					alt="Логотип магазина гаджетов Device"
+				>
 			</a>
 
 			<p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -301,20 +308,53 @@
 
 			<form class="index-submenu-form" action="https://acho.htmlacademy.ru" name="Форма отправки данных пользователя" method="post">
 				<p>
-					<label class="index-submenu-label" for="appointment-date">Ваше имя:</label>
-					<input id="appointment-date" type="text" name="name" placeholder="Имя Фамилия">
+					<label
+						class="index-submenu-label"
+						for="appointment-date">
+						Ваше имя:
+					</label>
+					<input
+						id="appointment-date"
+						type="text"
+						name="name"
+						placeholder="Имя Фамилия"
+					>
 				</p>
 				<p>
-					<label class="index-submenu-label" for="appointment-date">Ваш e-mail:</label>
-					<input id="appointment-date" type="email" name="e-mail" placeholder="email@example.com">
+					<label
+						class="index-submenu-label"
+						for="appointment-date">
+						Ваш e-mail:
+					</label>
+					<input
+						id="appointment-date"
+						type="email"
+						name="e-mail"
+						placeholder="email@example.com"
+					>
 				</p>
 				<p>
-					<label class="index-submenu-label" for="appointment-date">Текст письма:</label>
-					<input id="appointment-date" type="text" name="text" placeholder="В свободной форме">
+					<label
+						class="index-submenu-label"
+						for="appointment-date">
+						Текст письма:
+					</label>
+					<input
+						id="appointment-date"
+						type="text"
+						name="text"
+						placeholder="В свободной форме"
+					>
 				</p>
 					<button class="index-submenu-button-send" type="button">Отправить</button>
 					<button class="index-submenu-button-close" type="button">Закрыть</button>
 			</form>
+
+
+
+
+
+
 
 		</section>
 	</body>
